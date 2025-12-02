@@ -7,9 +7,9 @@
 
 class Client {
 private:
-    int clientSocket;
     std::string serverIP;
     int serverPort;
+    int clientSocket;
     struct sockaddr_in serverAddr;
     bool isConnected;
 

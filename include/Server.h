@@ -8,8 +8,8 @@
 
 class Server {
 private:
-    int serverSocket;
     int port;
+    int serverSocket;
     struct sockaddr_in serverAddr;
     bool isRunning;
     std::vector<int> clientSockets;

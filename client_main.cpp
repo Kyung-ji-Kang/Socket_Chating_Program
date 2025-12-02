@@ -8,6 +8,7 @@
 Client* clientInstance = nullptr;
 
 void signalHandler(int signal) {
+    (void)signal;
     std::cout << "\n[Main] Disconnecting from server..." << std::endl;
     if (clientInstance) {
         clientInstance->disconnect();

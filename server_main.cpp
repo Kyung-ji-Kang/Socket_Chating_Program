@@ -6,6 +6,7 @@
 Server* serverInstance = nullptr;
 
 void signalHandler(int signal) {
+    (void)signal;
     std::cout << "\n[Main] Shutting down server..." << std::endl;
     if (serverInstance) {
         serverInstance->stop();
